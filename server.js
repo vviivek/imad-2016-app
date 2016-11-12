@@ -1,4 +1,4 @@
-confirm("how are you")
+
 var express = require('express')
 var morgan = require('morgan');
 var path = require('path');

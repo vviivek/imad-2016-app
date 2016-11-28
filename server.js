@@ -27,7 +27,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 
-app.get('imad-2016-app/graphic-design-tools-Feature_1290x688_MS-940x501.jpg', function (req, res) {
+app.get('', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 

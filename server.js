@@ -4,13 +4,13 @@ var morgan = require('morgan');
 var path = require('path');
 var pool = requirq ('pg').pool;
 
-var config = {
-    user :'vvivek',
-    database:'vvivek',
-    host : 'db.imad.hasura-app.io',
-    port : '5432',
-    password :password.env. DB_PASSWORD
-};
+//var config = {
+  //  user :'vvivek',
+   // database:'vvivek',
+   // host : 'db.imad.hasura-app.io',
+    //port : '5432',
+   // password :password.env. DB_PASSWORD
+//};
 
 var app = express();
 app.use(morgan('combined'));
@@ -20,7 +20,7 @@ app.get('/', function (req, res) {
 });
 
 
-var pool = new Pool(config);
+//var pool = new Pool(config);
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
